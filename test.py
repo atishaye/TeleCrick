@@ -61,8 +61,6 @@ def loop(match_url):
 		def stop(message):
 			bot.polling.abort = True #an arbitrary command which raises error to end the program
 
-bot.enable_save_next_step_handlers(delay=2)
-bot.load_next_step_handlers()
 bot.polling()
 
 #currently not using these functions
