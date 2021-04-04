@@ -15,7 +15,7 @@ def fetch_score(message):
 		bot.pin_chat_message(chat_id, pin_msg.id)
 		unique_id = get_live_matches.unique_id_arr[int(match_no)-1]
 		global match_url
-		match_url = "https://cricapi.com/api/cricketScore?unique_id="+unique_id+"&apikey=5Z8rAijziOUSTfNxBXk0mAOzk7g2"#get the data about the desired match
+		match_url = "https://cricapi.com/api/cricketScore?unique_id="+unique_id+"&apikey=<KEY>"#get the data about the desired match
 		loop(match_url)
 	else:
 		msg = bot.reply_to(message, "Error2!\nSelect a no. from the above list only")
